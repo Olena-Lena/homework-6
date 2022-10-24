@@ -255,6 +255,11 @@
         </ul>
         </div>
     </div>
+    <form>
+        <p class="title-form-footer">Підпишіться на розсилку</p>
+        <label class="contact-form-footer" for="input-footer"></label>
+        <input name="user_email" class="contact-form-input-footer" type="email" id="input-footer" required>
+    </form>
     </footer>
     <div class="backdrop" data-modal>
         <div class="modal">
@@ -267,23 +272,32 @@
             <p class="title-form">Залиште свої дані, ми вам передзвонимо</p>
             <label class="contact-form-field">
                 <span class="form-items">Ім'я</span>
+                <span class="contact-form-input-wrapper">
                 <input name="user_name" class="contact-form-input" type="text" required>
+                <svg class="contact-form-icon"><use href="./img/sprate-svg.svg#person-icon-form"></use></svg>
+                </span>
             </label>
             <label class="contact-form-field">
-                <span class="form-items">Телефон</span> 
+                <span class="form-items">Телефон</span>
+                <span class="contact-form-input-wrapper"> 
                 <input name="user_tel" class="contact-form-input" type="tel" required>
+                <svg class="contact-form-icon"><use href="./img/sprate-svg.svg#phone-icon-form"></use></svg>
+                </span>
             </label>
             <label class="contact-form-field">
                 <span class="form-items">Пошта</span>
+                <span class="contact-form-input-wrapper">
                 <input name="user_email" class="contact-form-input" type="email" required>
+                <svg class="contact-form-icon"><use href="./img/sprate-svg.svg#email-icon-form"></use></svg>
+                </span>
             </label>
             <label class="contact-form-field">
                 <span class="form-items">Коментар</span>
                 <textarea name="user_message" class="contact-form-message" placeholder="Введіть текст"></textarea>
             </label>
             <div class="contact-form-checkbox">
-                <input class="contact-form-checkbox-input" type="checkbox" name="accent-policy" required>
-                <label class="contact-form-checkbox-label">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                <input class="contact-form-checkbox-input" type="checkbox" name="accent-policy" id="form-checkbox" required>
+                <label class="contact-form-checkbox-label" for="form-checkbox">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
             </div>
             <button type="submit" class="contact-form-submit">Відправити</button>
         </form>
