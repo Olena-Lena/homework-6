@@ -604,6 +604,9 @@ fill: #EEEEEE;
   }
 
 .button-form-footer {
+display: flex;
+justify-content: center;
+align-items: center;
 width: 200px;
 height: 50px;
 font-family: var(--main-font-family);
@@ -615,6 +618,7 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 background: #2196F3;
 border-radius: 4px;
+border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -687,6 +691,10 @@ pointer-events: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
+}
+
+.modal-close-button:focus+ .modal-close-icon {
+  fill: var(--color-accent);
 }
 
 .contact-form-field {
@@ -812,6 +820,15 @@ margin-bottom: 30px;
 justify-content: center;
 }
 
+.link-contract {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
 .contact-form-submit {
 display: block;
 margin: 0 auto;
